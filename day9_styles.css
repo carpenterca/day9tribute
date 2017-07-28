@@ -1,0 +1,655 @@
+/* Cory Carpenter's css for Day[9] Tribute Page */
+/* Day[9] Yellow #ffa71a */
+:root {
+  --day9yellow: #ffa71a;
+}
+
+body {
+  background-color: #000;
+  font-family: verdana, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global */
+.container {
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  border: 1px solid var(--day9yellow);
+}
+
+.button {
+  background-color: var(--day9yellow);
+  border: none;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin: 40px auto 0;
+  margin-right: 25%;
+  margin-left: 30%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+    background-color: #cc7e00;
+}
+
+/* Scroll anchor tag locations */
+.smooth {
+  padding-top: 100px;
+}
+#homepage .smooth {
+  padding-top: 150px;
+}
+#starcraftpage .smooth {
+  padding-top: 150px;
+}
+#cardspage .smooth {
+  padding-top: 200px;
+}
+
+
+/* Header */
+header {
+  background: #000;
+  border-bottom: var(--day9yellow) 2px solid;
+  color: #d7d5ca;
+  min-height: 60px;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+header a {
+  color: #d7d5ca;
+  font-family: verdana;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header a.underline {
+  border-bottom: var(--day9yellow) 1px solid;
+  padding-bottom: 3px;
+}
+
+header li {
+  display: inline;
+  float: left;
+  padding: 0 20px 0 20px;
+}
+
+header #logo {
+  float: left;
+  margin: 0;
+}
+
+.hb-button {
+  background: #222;
+  border: none;
+  border-radius: 3px;
+  color: var(--day9yellow);
+  cursor: pointer;
+  display: none;
+  float: right;
+  font-size: 18;
+  margin: 6px 0px;
+  padding: 10px 10px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header a:hover {
+  color: var(--day9yellow);
+}
+
+
+/* Homepage */
+#homepage {
+  color: #d7d5ca;
+  margin-top: 200px;
+}
+
+#homepage img {
+  float: right;
+  margin-right: 80px;
+}
+
+#homepage p {
+  float: left;
+  width: 60%;
+}
+
+#homepage #journeytext {
+  color: var(--day9yellow);
+  line-height: 5;
+}
+
+
+/* Starcraft Page */
+#starcraftpage {
+  margin-top: 250px;
+}
+
+#starcraftpage h1 {
+  color: var(--day9yellow);
+  float: left;
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#starcraftpage img {
+  float: right;
+  margin-top: 10px;
+  margin-right: 80px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#starcraftpage p {
+  color: #d7d5ca;
+  float: left;
+  width: 60%;
+}
+
+
+/* Day[9]TV Page */
+#day9TVpage {
+  margin-top: 250px;
+}
+
+#day9TVpage h1, h2 {
+  color: var(--day9yellow);
+  text-align: center;
+  width: 100%;
+}
+
+#day9TVpage h1 {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+#day9TVpage h2 {
+  font-size: 20px;
+}
+
+#day9TVpage p {
+  color: #d7d5ca;
+  text-align: center;
+}
+
+#day9TVpage #watch-text {
+  color: var(--day9yellow);
+  margin-top: 30px;
+}
+
+#day9TVpage iframe {
+  float: left;
+  margin-top: 40px;
+  margin-right: 5em;
+  margin-left: 10px;
+  width: 45%;
+}
+
+#day9TVpage .youtube-final {
+  margin-right: 0;
+}
+
+
+/* Card Games Page */
+#cardspage {
+  margin-top: 250px;
+}
+
+#cardspage h1 {
+  color: var(--day9yellow);
+  float: right;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#cardspage #mtg-title {
+  margin-right: 1em;
+}
+
+#cardspage #hearthstone-title {
+  margin-right: 3em;
+}
+
+#cardspage img {
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 45%;
+}
+
+#cardspage p {
+  color: #d7d5ca;
+  float: right;
+  text-align: justify;
+  width: 52%;
+}
+
+#cardspage .box {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+
+/* Game Design Page */
+#designpage {
+  margin-top: 250px;
+}
+
+#designpage h1 {
+  color: var(--day9yellow);
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#designpage img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#designpage p {
+  color: #d7d5ca;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+/* Footer */
+footer {
+  background-color: #000;
+  border-top: var(--day9yellow) 2px solid;
+  color: #d7d5ca;
+  margin-top: 20px;
+  min-height: 70px;
+  padding: 20px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+footer .social li {
+  display: inline;
+  padding-right: 15px;
+}
+
+footer .social li a {
+  color: #d7d5ca;
+  text-decoration: none;
+}
+
+footer .social li a:hover {
+  color: var(--day9yellow);
+}
+
+footer .credits a {
+  color: #d7d5ca;
+  text-decoration: underline;
+}
+
+footer .credits a:hover {
+  color: var(--day9yellow);
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width: 1720px) {
+  #starcraftpage {
+    margin-top: 300px;
+  }
+  #day9TVpage {
+    margin-top: 300px;
+  }
+  #designpage {
+    margin-top: 300px;
+    margin-bottom: 150px;
+  }
+
+  #cardspage #mtg-title {
+    margin-right: 2.5em;
+  }
+  #cardspage #hearthstone-title {
+    margin-right: 5em;
+  }
+
+  .button {
+    margin-top: 60px;
+    margin-right: 22%;
+    margin-left: 38%;
+  }
+
+  .summary-text {
+    font-size: 19px;
+  }
+}
+
+
+@media screen and (max-width: 1356px) {
+  #homepage img {
+    margin-right: 30px;
+  }
+
+  #starcraftpage img {
+    margin-right: 30px;
+  }
+
+  #cardspage #mtg-title {
+    margin-right: 0;
+  }
+
+  .button {
+    margin-right: 20%;
+    margin-left: 30%;
+  }
+}
+
+/* Change card page layout to stack each box */
+@media screen and (max-width: 1260px) {
+  #homepage img {
+    margin-right: 15px;
+  }
+
+  #starcraftpage img {
+    margin-right: 15px;
+  }
+
+  #day9TVpage iframe {
+    margin-right: 2em;
+    margin-left: 10px;
+    width: 45%;
+  }
+
+
+  #cardspage h1 {
+    float: none;
+    font-size: 32px;
+  }
+
+  #cardspage #mtg-title {
+    margin-right: 0;
+  }
+
+  #cardspage #hearthstone-title {
+    margin-right: 0;
+  }
+
+  #cardspage img {
+    float: left;
+    width: 35%;
+  }
+
+  #cardspage p {
+    float: right;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+    -ms-transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    width: 55%;
+  }
+
+  #cardspage .box {
+    display: inline-block;
+    float: none;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* Change Day[9]TV page video to stack each vid */
+@media screen and (max-width: 1090px) {
+  #homepage img {
+    margin-right: 0;
+  }
+
+  #starcraftpage img {
+    margin-right: 0;
+  }
+
+  #day9TVpage p {
+    margin-bottom: 50px;
+  }
+
+  #day9TVpage iframe {
+    display: block;
+    float: none;
+    margin-top: 40px;
+    margin-right: 10%;
+    margin-bottom: 60px;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  #day9TVpage .youtube-final {
+    margin-bottom: 50;
+  }
+
+  #cardspage p {
+    -ms-transform: translateY(30%);
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+  }
+}
+
+
+/* Change remaining page video to stack ontop */
+@media screen and (max-width: 1000px) {
+  #homepage {
+    margin-top: 100px;
+  }
+
+  #homepage .smooth {
+    padding-top: 600px;
+  }
+
+  #homepage img {
+    display: block;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+  }
+
+  #homepage p {
+    float: none;
+    width: 100%;
+  }
+
+  #starcraftpage {
+    margin-top: 150px;
+  }
+
+  #starcraftpage h1 {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #starcraftpage img {
+    display: block;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #starcraftpage p {
+    float: none;
+    width: 100%;
+  }
+
+  #day9TVpage {
+    margin-top: 150px;
+  }
+
+  #cardspage {
+    margin-top: 150px;
+  }
+
+  #cardspage p {
+    -ms-transform: translateY(10%);
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+  }
+
+  .button {
+    margin-top: 20px;
+  }
+
+  #designpage {
+    margin-top: 150px;
+  }
+}
+
+
+/* Navbar change for tablets */
+@media screen and (max-width: 938px) {
+  header #logo,
+  header nav,
+  header nav li {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 10px;
+  }
+
+  #homepage {
+    margin-top: 150px;
+  }
+}
+
+/* image recenter and text transform gone button change */
+@media screen and (max-width: 860px) {
+  #day9TVpage iframe {
+    max-width: 100%;
+  }
+
+  #cardspage p {
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* card page image and text stacked blocks */
+@media screen and (max-width: 825px) {
+  #cardspage img {
+    float: none;
+    min-width: 50%;
+  }
+
+  #cardspage p {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .button {
+    margin-top: 0px;
+  }
+}
+
+/* navbar change fully */
+@media screen and (max-width: 722px) {
+  header a {
+    font-size: 14px;
+  }
+
+  nav ul {
+    max-height: 0;
+    width: 100%;
+  }
+
+  nav ul.show {
+    max-height: 20em;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .hb-button {
+    display: inline;
+  }
+
+  #homepage {
+    margin-top: 100px;
+  }
+
+  #cardspage img {
+    width: 60%;
+  }
+
+  #designpage img {
+    max-width: 100%;
+  }
+
+  footer .social li {
+    display: inline-block;
+    padding: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #homepage #journeytext {
+    line-height: 2;
+  }
+
+  #starcraftpage img {
+    max-width: 100%;
+  }
+
+  #cardspage img {
+    max-width: 100%;
+  }
+}
