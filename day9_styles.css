@@ -1,8 +1,10 @@
 /* Cory Carpenter's css for Day[9] Tribute Page */
 /* Day[9] Yellow #ffa71a */
-:root {
+
+/* root does not work in IE */
+/*:root {
   --day9yellow: #ffa71a;
-}
+}*/
 
 body {
   background-color: #000;
@@ -26,11 +28,11 @@ ul {
 }
 
 iframe {
-  border: 1px solid var(--day9yellow);
+  border: 1px solid #ffa71a;
 }
 
 .button {
-  background-color: var(--day9yellow);
+  background-color: #ffa71a;
   border: none;
   color: black;
   cursor: pointer;
@@ -66,7 +68,7 @@ iframe {
 /* Header */
 header {
   background: #000;
-  border-bottom: var(--day9yellow) 2px solid;
+  border-bottom: #ffa71a 2px solid;
   color: #d7d5ca;
   min-height: 60px;
   padding-top: 10px;
@@ -85,7 +87,7 @@ header a {
 }
 
 header a.underline {
-  border-bottom: var(--day9yellow) 1px solid;
+  border-bottom: #ffa71a 1px solid;
   padding-bottom: 3px;
 }
 
@@ -104,7 +106,7 @@ header #logo {
   background: #222;
   border: none;
   border-radius: 3px;
-  color: var(--day9yellow);
+  color: #ffa71a;
   cursor: pointer;
   display: none;
   float: right;
@@ -119,7 +121,7 @@ header nav {
 }
 
 header a:hover {
-  color: var(--day9yellow);
+  color: #ffa71a;
 }
 
 
@@ -140,7 +142,7 @@ header a:hover {
 }
 
 #homepage #journeytext {
-  color: var(--day9yellow);
+  color: #ffa71a;
   line-height: 5;
 }
 
@@ -151,7 +153,7 @@ header a:hover {
 }
 
 #starcraftpage h1 {
-  color: var(--day9yellow);
+  color: #ffa71a;
   float: left;
   font-size: 32px;
   margin-top: 30px;
@@ -180,7 +182,7 @@ header a:hover {
 }
 
 #day9TVpage h1, h2 {
-  color: var(--day9yellow);
+  color: #ffa71a;
   text-align: center;
   width: 100%;
 }
@@ -201,7 +203,7 @@ header a:hover {
 }
 
 #day9TVpage #watch-text {
-  color: var(--day9yellow);
+  color: #ffa71a;
   margin-top: 30px;
 }
 
@@ -224,7 +226,7 @@ header a:hover {
 }
 
 #cardspage h1 {
-  color: var(--day9yellow);
+  color: #ffa71a;
   float: right;
   font-size: 22px;
   margin-top: 30px;
@@ -268,7 +270,7 @@ header a:hover {
 }
 
 #designpage h1 {
-  color: var(--day9yellow);
+  color: #ffa71a;
   font-size: 32px;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -293,7 +295,7 @@ header a:hover {
 /* Footer */
 footer {
   background-color: #000;
-  border-top: var(--day9yellow) 2px solid;
+  border-top: #ffa71a 2px solid;
   color: #d7d5ca;
   margin-top: 20px;
   min-height: 70px;
@@ -313,7 +315,7 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  color: var(--day9yellow);
+  color: #ffa71a;
 }
 
 footer .credits a {
@@ -322,7 +324,7 @@ footer .credits a {
 }
 
 footer .credits a:hover {
-  color: var(--day9yellow);
+  color: #ffa71a;
 }
 
 
